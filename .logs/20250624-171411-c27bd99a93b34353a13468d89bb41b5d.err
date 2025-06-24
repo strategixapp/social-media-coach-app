@@ -1,0 +1,156 @@
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⨯ Error: Invalid src prop (https://www.geckoboard.com/uploads/Social-media-overview-dashboard.png) on `next/image`, hostname "www.geckoboard.com" is not configured under images in your `next.config.js`
+See more info: https://nextjs.org/docs/messages/next-image-unconfigured-host
+    at defaultLoader (/home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:17545:27)
+    at /home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:16782:36
+    at Array.map (<anonymous>)
+    at generateImgAttrs (/home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:16782:24)
+    at getImgProps (/home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:17060:27)
+    at /home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:14593:82
+digest: "726276546"
+ ⨯ Error: Invalid src prop (https://www.geckoboard.com/uploads/Social-media-overview-dashboard.png) on `next/image`, hostname "www.geckoboard.com" is not configured under images in your `next.config.js`
+See more info: https://nextjs.org/docs/messages/next-image-unconfigured-host
+    at defaultLoader (/home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:17545:27)
+    at /home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:16782:36
+    at Array.map (<anonymous>)
+    at generateImgAttrs (/home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:16782:24)
+    at getImgProps (/home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:17060:27)
+    at /home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:14593:82
+digest: "726276546"
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⨯ Error: Invalid src prop (https://www.geckoboard.com/uploads/Social-media-overview-dashboard.png) on `next/image`, hostname "www.geckoboard.com" is not configured under images in your `next.config.js`
+See more info: https://nextjs.org/docs/messages/next-image-unconfigured-host
+    at defaultLoader (/home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:17545:27)
+    at /home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:16782:36
+    at Array.map (<anonymous>)
+    at generateImgAttrs (/home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:16782:24)
+    at getImgProps (/home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:17060:27)
+    at /home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:14593:82
+digest: "726276546"
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⨯ Error: Invalid src prop (https://www.geckoboard.com/uploads/Social-media-overview-dashboard.png) on `next/image`, hostname "www.geckoboard.com" is not configured under images in your `next.config.js`
+See more info: https://nextjs.org/docs/messages/next-image-unconfigured-host
+    at defaultLoader (/home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:17545:27)
+    at /home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:16782:36
+    at Array.map (<anonymous>)
+    at generateImgAttrs (/home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:16782:24)
+    at getImgProps (/home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:17060:27)
+    at /home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:14593:82
+digest: "726276546"
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⨯ Error: Invalid src prop (https://www.geckoboard.com/uploads/Social-media-overview-dashboard.png) on `next/image`, hostname "www.geckoboard.com" is not configured under images in your `next.config.js`
+See more info: https://nextjs.org/docs/messages/next-image-unconfigured-host
+    at defaultLoader (/home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:17545:27)
+    at /home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:16782:36
+    at Array.map (<anonymous>)
+    at generateImgAttrs (/home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:16782:24)
+    at getImgProps (/home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:17060:27)
+    at /home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:14593:82
+digest: "726276546"
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⨯ Error: Invalid src prop (https://www.geckoboard.com/uploads/Social-media-overview-dashboard.png) on `next/image`, hostname "www.geckoboard.com" is not configured under images in your `next.config.js`
+See more info: https://nextjs.org/docs/messages/next-image-unconfigured-host
+    at defaultLoader (/home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:17545:27)
+    at /home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:16782:36
+    at Array.map (<anonymous>)
+    at generateImgAttrs (/home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:16782:24)
+    at getImgProps (/home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:17060:27)
+    at /home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:14593:82
+digest: "726276546"
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⨯ Error: Invalid src prop (https://www.geckoboard.com/uploads/Social-media-overview-dashboard.png) on `next/image`, hostname "www.geckoboard.com" is not configured under images in your `next.config.js`
+See more info: https://nextjs.org/docs/messages/next-image-unconfigured-host
+    at defaultLoader (/home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:17545:27)
+    at /home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:16782:36
+    at Array.map (<anonymous>)
+    at generateImgAttrs (/home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:16782:24)
+    at getImgProps (/home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:17060:27)
+    at /home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:14593:82
+digest: "726276546"
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⨯ Error: Invalid src prop (https://www.geckoboard.com/uploads/Social-media-overview-dashboard.png) on `next/image`, hostname "www.geckoboard.com" is not configured under images in your `next.config.js`
+See more info: https://nextjs.org/docs/messages/next-image-unconfigured-host
+    at defaultLoader (/home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:17545:27)
+    at /home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:16782:36
+    at Array.map (<anonymous>)
+    at generateImgAttrs (/home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:16782:24)
+    at getImgProps (/home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:17060:27)
+    at /home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:14593:82
+digest: "726276546"
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⨯ Error: Invalid src prop (https://www.geckoboard.com/uploads/Social-media-overview-dashboard.png) on `next/image`, hostname "www.geckoboard.com" is not configured under images in your `next.config.js`
+See more info: https://nextjs.org/docs/messages/next-image-unconfigured-host
+    at defaultLoader (/home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:17545:27)
+    at /home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:16782:36
+    at Array.map (<anonymous>)
+    at generateImgAttrs (/home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:16782:24)
+    at getImgProps (/home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:17060:27)
+    at /home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:14593:82
+digest: "726276546"
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⨯ Error: Invalid src prop (https://www.geckoboard.com/uploads/Social-media-overview-dashboard.png) on `next/image`, hostname "www.geckoboard.com" is not configured under images in your `next.config.js`
+See more info: https://nextjs.org/docs/messages/next-image-unconfigured-host
+    at defaultLoader (/home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:17545:27)
+    at /home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:16782:36
+    at Array.map (<anonymous>)
+    at generateImgAttrs (/home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:16782:24)
+    at getImgProps (/home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:17060:27)
+    at /home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:14593:82
+digest: "726276546"
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⨯ Error: Invalid src prop (https://www.geckoboard.com/uploads/Social-media-overview-dashboard.png) on `next/image`, hostname "www.geckoboard.com" is not configured under images in your `next.config.js`
+See more info: https://nextjs.org/docs/messages/next-image-unconfigured-host
+    at defaultLoader (/home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:17545:27)
+    at /home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:16782:36
+    at Array.map (<anonymous>)
+    at generateImgAttrs (/home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:16782:24)
+    at getImgProps (/home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:17060:27)
+    at /home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:14593:82
+digest: "726276546"
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⨯ Error: Invalid src prop (https://www.geckoboard.com/uploads/Social-media-overview-dashboard.png) on `next/image`, hostname "www.geckoboard.com" is not configured under images in your `next.config.js`
+See more info: https://nextjs.org/docs/messages/next-image-unconfigured-host
+    at defaultLoader (/home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:17545:27)
+    at /home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:16782:36
+    at Array.map (<anonymous>)
+    at generateImgAttrs (/home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:16782:24)
+    at getImgProps (/home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:17060:27)
+    at /home/ubuntu/social_media_coach_app/app/.next/server/vendor-chunks/next.js:14593:82
+digest: "726276546"

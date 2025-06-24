@@ -1,0 +1,213 @@
+sending incremental file list
+components.json
+next-env.d.ts
+next.config.js
+package.json
+postcss.config.js
+tailwind.config.ts
+tsconfig.json
+tsconfig.tsbuildinfo
+app/
+app/globals.css
+app/layout.tsx
+app/page.tsx
+app/about/
+app/about/page.tsx
+app/analytics/
+app/analytics/page.tsx
+app/api/
+app/api/auth/
+app/api/auth/[...nextauth]/
+app/api/auth/[...nextauth]/route.ts
+app/api/auth/signup/
+app/api/auth/signup/route.ts
+app/api/coach/
+app/api/coach/chat/
+app/api/coach/chat/route.ts
+app/auth/
+app/auth/forgot-password/
+app/auth/forgot-password/page.tsx
+app/auth/login/
+app/auth/login/page.tsx
+app/auth/signup/
+app/auth/signup/page.tsx
+app/contact/
+app/contact/page.tsx
+app/dashboard/
+app/dashboard/page.tsx
+app/dashboard/analytics/
+app/dashboard/analytics/page.tsx
+app/dashboard/coach/
+app/dashboard/coach/page.tsx
+app/dashboard/content/
+app/dashboard/content/page.tsx
+app/dashboard/monetization/
+app/dashboard/monetization/page.tsx
+app/dashboard/platforms/
+app/dashboard/platforms/instagram/
+app/dashboard/platforms/instagram/page.tsx
+app/dashboard/platforms/youtube/
+app/dashboard/platforms/youtube/page.tsx
+app/dashboard/settings/
+app/dashboard/settings/page.tsx
+app/help/
+app/help/page.tsx
+app/platforms/
+app/platforms/page.tsx
+app/privacy/
+app/privacy/page.tsx
+app/templates/
+app/templates/page.tsx
+app/terms/
+app/terms/page.tsx
+components/
+components/session-provider.tsx
+components/theme-provider.tsx
+components/theme-toggle.tsx
+components/analytics/
+components/analytics/analytics-dashboard.tsx
+components/coach/
+components/coach/ai-coach-interface.tsx
+components/content/
+components/content/content-hub.tsx
+components/dashboard/
+components/dashboard/dashboard-content.tsx
+components/dashboard/dashboard-layout.tsx
+components/landing/
+components/landing/features-section.tsx
+components/landing/footer.tsx
+components/landing/hero-section.tsx
+components/landing/navigation.tsx
+components/landing/platforms-section.tsx
+components/landing/pricing-section.tsx
+components/landing/testimonials-section.tsx
+components/monetization/
+components/monetization/monetization-hub.tsx
+components/platforms/
+components/platforms/instagram-platform.tsx
+components/platforms/youtube-platform.tsx
+components/settings/
+components/settings/settings-page.tsx
+components/ui/
+components/ui/accordion.tsx
+components/ui/alert-dialog.tsx
+components/ui/alert.tsx
+components/ui/aspect-ratio.tsx
+components/ui/avatar.tsx
+components/ui/badge.tsx
+components/ui/breadcrumb.tsx
+components/ui/button.tsx
+components/ui/calendar.tsx
+components/ui/card.tsx
+components/ui/carousel.tsx
+components/ui/checkbox.tsx
+components/ui/collapsible.tsx
+components/ui/command.tsx
+components/ui/context-menu.tsx
+components/ui/date-range-picker.tsx
+components/ui/dialog.tsx
+components/ui/drawer.tsx
+components/ui/dropdown-menu.tsx
+components/ui/form.tsx
+components/ui/hover-card.tsx
+components/ui/input-otp.tsx
+components/ui/input.tsx
+components/ui/label.tsx
+components/ui/menubar.tsx
+components/ui/navigation-menu.tsx
+components/ui/pagination.tsx
+components/ui/popover.tsx
+components/ui/progress.tsx
+components/ui/radio-group.tsx
+components/ui/resizable.tsx
+components/ui/scroll-area.tsx
+components/ui/select.tsx
+components/ui/separator.tsx
+components/ui/sheet.tsx
+components/ui/skeleton.tsx
+components/ui/slider.tsx
+components/ui/sonner.tsx
+components/ui/switch.tsx
+components/ui/table.tsx
+components/ui/tabs.tsx
+components/ui/task-card.tsx
+components/ui/textarea.tsx
+components/ui/toast.tsx
+components/ui/toaster.tsx
+components/ui/toggle-group.tsx
+components/ui/toggle.tsx
+components/ui/tooltip.tsx
+components/ui/use-toast.ts
+hooks/
+hooks/use-toast.ts
+lib/
+lib/auth.ts
+lib/db.ts
+lib/types.ts
+lib/utils.ts
+lib/db/
+prisma/
+prisma/schema.prisma
+scripts/
+scripts/seed.ts
+types/
+types/next-auth.d.ts
+
+sent 625,981 bytes  received 2,315 bytes  1,256,592.00 bytes/sec
+total size is 616,893  speedup is 0.98
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+  ▲ Next.js 14.2.28
+  - Experiments (use with caution):
+    · outputFileTracingRoot
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Skipping linting
+   Checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/24) ...
+   Generating static pages (6/24) 
+   Generating static pages (12/24) 
+   Generating static pages (18/24) 
+ ✓ Generating static pages (24/24)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ ○ /                                    14.2 kB         154 kB
+├ ○ /_not-found                          876 B          88.3 kB
+├ ○ /about                               186 B          96.3 kB
+├ ○ /analytics                           144 B          87.5 kB
+├ ƒ /api/auth/[...nextauth]              0 B                0 B
+├ ƒ /api/auth/signup                     0 B                0 B
+├ ƒ /api/coach/chat                      0 B                0 B
+├ ○ /auth/forgot-password                3.85 kB         108 kB
+├ ○ /auth/login                          3.48 kB         118 kB
+├ ○ /auth/signup                         4.67 kB         108 kB
+├ ○ /contact                             893 B           105 kB
+├ ƒ /dashboard                           4.09 kB         157 kB
+├ ƒ /dashboard/analytics                 7.44 kB         267 kB
+├ ƒ /dashboard/coach                     6.95 kB         159 kB
+├ ƒ /dashboard/content                   5.98 kB         158 kB
+├ ƒ /dashboard/monetization              5.24 kB         265 kB
+├ ƒ /dashboard/platforms/instagram       7.36 kB         160 kB
+├ ƒ /dashboard/platforms/youtube         5.85 kB         158 kB
+├ ƒ /dashboard/settings                  6.89 kB         159 kB
+├ ○ /help                                186 B          96.3 kB
+├ ○ /platforms                           144 B          87.5 kB
+├ ○ /privacy                             186 B          96.3 kB
+├ ○ /templates                           144 B          87.5 kB
+└ ○ /terms                               186 B          96.3 kB
++ First Load JS shared by all            87.4 kB
+  ├ chunks/117-b444e30fad5003ac.js       31.8 kB
+  ├ chunks/fd9d1056-9aca97ab67458473.js  53.6 kB
+  └ other shared chunks (total)          2 kB
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+

@@ -1,0 +1,351 @@
+generator client {
+    provider = "prisma-client-js"
+    binaryTargets = ["native", "linux-musl-arm64-openssl-3.0.x"]
+    output = "/home/ubuntu/social_media_coach_app/app/node_modules/.prisma/client"
+}
+
+datasource db {
+    provider = "postgresql"
+    url      = env("DATABASE_URL")
+}
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String? @db.Text
+  access_token      String? @db.Text
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String? @db.Text
+  session_state     String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model User {
+  id                    String                 @id @default(cuid())
+  name                  String?
+  email                 String                 @unique
+  emailVerified         DateTime?
+  image                 String?
+  password              String?
+  accounts              Account[]
+  sessions              Session[]
+  createdAt             DateTime               @default(now())
+  updatedAt             DateTime               @updatedAt
+  
+  // Subscription & Billing
+  subscriptionTier      SubscriptionTier       @default(TRIAL)
+  subscriptionStatus    SubscriptionStatus     @default(TRIAL)
+  subscriptionStartDate DateTime?
+  subscriptionEndDate   DateTime?
+  billingCycle          BillingCycle?
+  
+  // Trial Management
+  trialStartDate        DateTime?
+  trialEndDate          DateTime?
+  isTrialActive         Boolean                @default(true)
+  trialUsageCount       Int                    @default(0)
+  dailyUsageCount       Int                    @default(0)
+  dailyUsageResetDate   DateTime?
+  
+  // Stripe Integration
+  stripeCustomerId      String?                @unique
+  stripeSubscriptionId  String?                @unique
+  stripePriceId         String?
+  stripeProductId       String?
+  stripePaymentMethodId String?
+  
+  // Payment & Subscription Management
+  paymentStatus         PaymentStatus?         @default(PENDING)
+  lastPaymentDate       DateTime?
+  nextBillingDate       DateTime?
+  subscriptionCancelAt  DateTime?
+  subscriptionCanceledAt DateTime?
+  failedPaymentCount    Int                    @default(0)
+  
+  // Billing & Invoices
+  invoices              Invoice[]
+  payments              Payment[]
+  
+  // Profile & Assessment
+  onboardingCompleted   Boolean                @default(false)
+  assessmentCompleted   Boolean                @default(false)
+  primaryGoals          String[]
+  targetPlatforms       String[]
+  experienceLevel       ExperienceLevel?
+  businessType          BusinessType?
+  currentFollowers      Json?                  // Platform-specific follower counts
+  monthlyBudget         Float?
+  timeAvailable         Int?                   // Hours per week
+  
+  // Coaching Data
+  coachingStyle         String?
+  preferredTone         String?
+  brandVoice           String?
+  contentPillars       String[]
+  
+  // Progress Tracking
+  assessmentAnswers     AssessmentAnswer[]
+  progressMetrics       ProgressMetric[]
+  goalProgress          GoalProgress[]
+  chatSessions          ChatSession[]
+  contentTemplates      ContentTemplate[]
+  
+  @@map("users")
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
+
+model AssessmentAnswer {
+  id         String   @id @default(cuid())
+  userId     String
+  questionId String
+  answer     String
+  score      Int?
+  category   String
+  createdAt  DateTime @default(now())
+  
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  @@unique([userId, questionId])
+}
+
+model ProgressMetric {
+  id           String   @id @default(cuid())
+  userId       String
+  platform     String
+  metricType   String   // followers, engagement, views, etc.
+  value        Float
+  previousValue Float?
+  changePercent Float?
+  recordedAt   DateTime @default(now())
+  
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  @@index([userId, platform, metricType])
+}
+
+model GoalProgress {
+  id          String     @id @default(cuid())
+  userId      String
+  goalType    String
+  target      Float
+  current     Float
+  deadline    DateTime?
+  status      GoalStatus @default(IN_PROGRESS)
+  platform    String?
+  description String?
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+  
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model ChatSession {
+  id        String        @id @default(cuid())
+  userId    String
+  title     String?
+  platform  String?
+  topic     String?
+  messages  ChatMessage[]
+  createdAt DateTime      @default(now())
+  updatedAt DateTime      @updatedAt
+  
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model ChatMessage {
+  id            String      @id @default(cuid())
+  sessionId     String
+  role          MessageRole
+  content       String      @db.Text
+  metadata      Json?       // Additional context, suggestions, etc.
+  createdAt     DateTime    @default(now())
+  
+  session ChatSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+}
+
+model ContentTemplate {
+  id          String   @id @default(cuid())
+  userId      String?
+  title       String
+  description String?
+  platform    String
+  category    String
+  content     String   @db.Text
+  variables   Json?    // Template variables
+  isPublic    Boolean  @default(false)
+  usageCount  Int      @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  
+  user User? @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  @@index([platform, category])
+}
+
+model PlatformStrategy {
+  id          String   @id @default(cuid())
+  platform    String   @unique
+  title       String
+  description String
+  content     String   @db.Text
+  tactics     Json     // Array of strategic tactics
+  metrics     Json     // Key metrics to track
+  tools       Json     // Recommended tools
+  updatedAt   DateTime @updatedAt
+}
+
+model TrendAnalysis {
+  id          String   @id @default(cuid())
+  platform    String
+  trendType   String   // hashtag, audio, format, topic
+  content     String
+  score       Float    // Trending score
+  category    String?
+  region      String?
+  detectedAt  DateTime @default(now())
+  expiresAt   DateTime?
+  
+  @@index([platform, trendType, score])
+}
+
+enum SubscriptionTier {
+  TRIAL
+  PRO
+  ENTERPRISE
+  LIFETIME
+}
+
+enum SubscriptionStatus {
+  ACTIVE
+  CANCELED
+  EXPIRED
+  TRIAL
+}
+
+enum BillingCycle {
+  MONTHLY
+  YEARLY
+}
+
+enum ExperienceLevel {
+  BEGINNER
+  INTERMEDIATE
+  ADVANCED
+  EXPERT
+}
+
+enum BusinessType {
+  PERSONAL_BRAND
+  SMALL_BUSINESS
+  AGENCY
+  ENTERPRISE
+  CONTENT_CREATOR
+  INFLUENCER
+}
+
+enum GoalStatus {
+  NOT_STARTED
+  IN_PROGRESS
+  COMPLETED
+  PAUSED
+  CANCELED
+}
+
+enum MessageRole {
+  USER
+  ASSISTANT
+  SYSTEM
+}
+
+enum PaymentStatus {
+  PENDING
+  PROCESSING
+  SUCCEEDED
+  FAILED
+  CANCELED
+  REFUNDED
+}
+
+model Invoice {
+  id                String       @id @default(cuid())
+  userId            String
+  stripeInvoiceId   String       @unique
+  amountPaid        Float
+  amountDue         Float
+  currency          String       @default("usd")
+  status            String       // draft, open, paid, void, uncollectible
+  subscriptionId    String?
+  paymentIntentId   String?
+  invoiceUrl        String?
+  hostedInvoiceUrl  String?
+  invoicePdf        String?
+  billingReason     String?      // subscription_create, subscription_cycle, etc.
+  periodStart       DateTime
+  periodEnd         DateTime
+  createdAt         DateTime     @default(now())
+  updatedAt         DateTime     @updatedAt
+  
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  @@index([userId, status])
+}
+
+model Payment {
+  id                 String        @id @default(cuid())
+  userId             String
+  stripePaymentId    String        @unique
+  amount             Float
+  currency           String        @default("usd")
+  status             PaymentStatus
+  paymentMethod      String?       // card, bank_account, etc.
+  description        String?
+  subscriptionId     String?
+  invoiceId          String?
+  failureCode        String?
+  failureMessage     String?
+  refundedAmount     Float?        @default(0)
+  metadata           Json?
+  createdAt          DateTime      @default(now())
+  updatedAt          DateTime      @updatedAt
+  
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  @@index([userId, status])
+  @@index([stripePaymentId])
+}
+
+model StripeEvent {
+  id            String   @id @default(cuid())
+  stripeEventId String   @unique
+  eventType     String   // invoice.payment_succeeded, customer.subscription.updated, etc.
+  processed     Boolean  @default(false)
+  data          Json     // Full Stripe event data
+  error         String?  // Error message if processing failed
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  
+  @@index([eventType, processed])
+}

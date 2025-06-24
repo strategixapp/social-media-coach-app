@@ -1,0 +1,93 @@
+  ▲ Next.js 14.2.28
+  - Local:        http://localhost:3000
+  - Environments: .env
+  - Experiments (use with caution):
+    · outputFileTracingRoot
+
+ ✓ Starting...
+ ✓ Ready in 2.2s
+ ○ Compiling / ...
+ ✓ Compiled / in 4.3s (1354 modules)
+ GET / 200 in 4955ms
+ ✓ Compiled in 605ms (676 modules)
+ ○ Compiling /api/auth/[...nextauth] ...
+ ✓ Compiled /api/auth/[...nextauth] in 3s (913 modules)
+ GET /api/auth/session 200 in 3571ms
+ GET /api/auth/session 200 in 30ms
+ GET / 200 in 181ms
+ ○ Compiling /privacy ...
+ ✓ Compiled /privacy in 1988ms (1693 modules)
+ GET /api/auth/session 200 in 1892ms
+ GET /auth/signup 200 in 2588ms
+ GET /auth/signup?plan=pro 200 in 2588ms
+ GET /auth/login 200 in 2598ms
+ GET /platforms 307 in 2478ms
+ GET /dashboard 307 in 2495ms
+ GET /analytics 307 in 2491ms
+ GET /templates 307 in 2490ms
+ GET /about 200 in 2503ms
+ GET /terms 200 in 2502ms
+ GET /contact 200 in 2532ms
+ GET /help 200 in 2508ms
+ GET /privacy 200 in 2510ms
+ GET /api/auth/session 200 in 160ms
+ GET /dashboard 307 in 365ms
+ GET /auth/login 200 in 398ms
+ ○ Compiling /dashboard/analytics ...
+ ✓ Compiled /dashboard/analytics in 3.6s (2909 modules)
+ GET /api/auth/session 200 in 3291ms
+ GET /api/auth/session 200 in 3265ms
+ GET /api/auth/session 200 in 3103ms
+ GET /api/auth/session 200 in 2806ms
+ GET /api/auth/session 200 in 2788ms
+ GET /api/auth/session 200 in 2769ms
+ GET /api/auth/session 200 in 2768ms
+ GET /api/auth/session 200 in 2768ms
+ GET /api/auth/session 200 in 3307ms
+ GET /auth/login 200 in 3974ms
+ GET /dashboard/analytics 307 in 4172ms
+ GET /dashboard/content 307 in 4165ms
+ GET /api/auth/session 200 in 88ms
+ GET /api/auth/session 200 in 84ms
+ GET /api/auth/session 200 in 84ms
+ GET /api/auth/session 200 in 83ms
+ GET /api/auth/session 200 in 83ms
+ GET /api/auth/session 200 in 83ms
+ GET /api/auth/session 200 in 82ms
+ GET /api/auth/session 200 in 82ms
+ GET /api/auth/session 200 in 82ms
+ GET /auth/login 200 in 133ms
+ GET /auth/login 200 in 130ms
+ GET /api/auth/session 200 in 82ms
+ GET /api/auth/session 200 in 73ms
+ GET /api/auth/session 200 in 71ms
+ GET /api/auth/session 200 in 31ms
+ GET /api/auth/session 200 in 31ms
+ GET /api/auth/session 200 in 27ms
+ ○ Compiling /auth/forgot-password ...
+ ✓ Compiled /auth/forgot-password in 615ms (2919 modules)
+ GET /auth/forgot-password 200 in 689ms
+ GET /api/auth/session 200 in 49ms
+ GET /api/auth/session 200 in 22ms
+ GET / 200 in 197ms
+ GET /terms 200 in 235ms
+ GET /about 200 in 235ms
+ GET /contact 200 in 244ms
+ GET /auth/signup 200 in 252ms
+ GET /dashboard 307 in 258ms
+ GET /platforms 307 in 266ms
+ GET /templates 307 in 266ms
+ GET /auth/forgot-password 200 in 267ms
+ GET /analytics 307 in 274ms
+ GET /privacy 200 in 145ms
+ GET /auth/login 200 in 123ms
+ GET /auth/signup?plan=pro 200 in 120ms
+ GET /auth/login 200 in 147ms
+ GET /help 200 in 168ms
+ GET /dashboard/content 307 in 172ms
+ GET /dashboard 307 in 172ms
+ GET /dashboard/analytics 307 in 171ms
+ GET /auth/login 200 in 61ms
+ GET /auth/login 200 in 61ms
+ GET /auth/login 200 in 61ms
+[?25h
