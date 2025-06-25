@@ -21,3 +21,4 @@ A Next.js application for social media coaching and strategy.
 
       Visit http://localhost:3000 to view the application locally.
 # Trigger deployment with correct root directory
+# Trigger deployment
